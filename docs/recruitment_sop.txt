@@ -1,0 +1,39 @@
+PATIENT RECRUITMENT AND SCREENING STANDARD OPERATING PROCEDURE (SOP-204)
+
+Purpose
+This SOP defines the process for identifying, pre-screening, and enrolling
+participants into clinical trials conducted at research sites. It applies to all
+Phase 1 through Phase 4 studies.
+
+Pre-Screening
+Potential participants are first identified through the patient database, community
+outreach, and referrals. A recruitment specialist conducts an initial pre-screen by
+phone using the study-specific pre-screening questionnaire. The pre-screen must be
+completed within 48 hours of the participant's first contact.
+
+Eligibility Window
+Once a participant passes pre-screening, the formal screening visit must be scheduled
+within 14 days. This 14-day period is referred to as the screening window. If the
+window is missed, the participant must be re-pre-screened before a screening visit can
+be booked.
+
+Informed Consent
+Informed consent must be obtained before any study-specific procedures are performed.
+The consenting process must be conducted by a delegated and trained staff member, and
+the signed consent form must be stored in the participant's regulatory file. A copy is
+provided to the participant.
+
+Data Quality
+All source data must be recorded contemporaneously and must be attributable, legible,
+contemporaneous, original, and accurate (the ALCOA principles). Any correction to source
+data must be made with a single line strike-through, initialed, and dated. Correction
+fluid is prohibited.
+
+Adverse Events
+Any adverse event reported by a participant must be documented within 24 hours and
+escalated to the Principal Investigator. Serious adverse events (SAEs) must be reported
+to the sponsor within 24 hours of site awareness.
+
+Retention
+Sites are expected to maintain a participant retention rate above 85 percent for the
+duration of a study. Missed visits must be followed up within 3 business days.
