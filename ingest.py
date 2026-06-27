@@ -6,6 +6,7 @@ You run this whenever your source documents change.
 """
 
 import os
+import sys
 from dotenv import load_dotenv
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -19,11 +20,22 @@ DB_DIR = "chroma_db"     # folder where the vector index is persisted
 
 
 def main():
+    # Fail early with a helpful message if the API key is missing.
+    if not os.getenv("GOOGLE_API_KEY"):
+        sys.exit("Error: GOOGLE_API_KEY is not set. Copy .env.example to .env and add your key.")
+
+    # The docs folder must exist and contain something to index.
+    if not os.path.isdir(DOCS_DIR):
+        sys.exit(f"Error: no '{DOCS_DIR}/' folder found. Create it and add your .txt files.")
+
     # 1. LOAD ---------------------------------------------------------------
     # Read every .txt file in docs/ into LangChain Document objects.
     loader = DirectoryLoader(DOCS_DIR, glob="**/*.txt", loader_cls=TextLoader)
     documents = loader.load()
     print(f"Loaded {len(documents)} document(s)")
+
+    if not documents:
+        sys.exit(f"Error: no .txt files found in '{DOCS_DIR}/'. Add documents and try again.")
 
     # 2. CHUNK --------------------------------------------------------------
     # A whole document is too big and too unfocused to embed as one vector.

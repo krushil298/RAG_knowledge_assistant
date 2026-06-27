@@ -49,9 +49,12 @@ python ingest.py
 
 # Ask questions interactively
 python query.py
+
+# ...or ask a single question and exit (one-shot mode)
+python query.py "What are the pre-screening steps?"
 ```
 
-Type your questions at the `>` prompt; type `quit` to exit.
+In interactive mode, type your questions at the `>` prompt; type `quit` to exit.
 
 To use your own knowledge base, drop `.txt` files into `docs/` and re-run
 `python ingest.py`.
